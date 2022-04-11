@@ -10,19 +10,19 @@ const apiRoutes = (app) => {
         next();
       });
     app.get('/', (req, res) => {
-        res.sendFile(path.resolve('../server/public/build/index.html'))
+        res.sendFile(path.resolve('../backend/public/build/index.html'))
     })
     app.get('/Linkpad', (req, res) => {
-        res.sendFile(path.resolve('../server/public/build/index.html'))
+        res.sendFile(path.resolve('../backend/public/build/index.html'))
     })
     app.get('/Reminders', (req, res) => {
-        res.sendFile(path.resolve('../server/public/build/index.html'))
+        res.sendFile(path.resolve('../backend/public/build/index.html'))
     })
     app.get('/Archive', (req, res) => {
-        res.sendFile(path.resolve('../server/public/build/index.html'))
+        res.sendFile(path.resolve('../backend/public/build/index.html'))
     })
     app.get('/Trash', (req, res) => {
-        res.sendFile(path.resolve('../server/public/build/index.html'))
+        res.sendFile(path.resolve('../backend/public/build/index.html'))
     })
     LinkPad(app);
     Notes(app);
